@@ -1,4 +1,4 @@
-package HelloWorld;
+package SectionThree;
 
 public class CharAndBoolean {
     public static void main(String[] args) {

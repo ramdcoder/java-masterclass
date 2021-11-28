@@ -1,4 +1,4 @@
-package HelloWorld;
+package SectionThree;
 
 public class Strings {
     public static void main(String[] args) {
