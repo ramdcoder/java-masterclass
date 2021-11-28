@@ -17,6 +17,14 @@ public class Methods {
 
         displayHighScorePosition("Kayla", calculateHighScorePosition(50));
 
+        displayHighScorePosition("Dez", calculateHighScorePosition(1000));
+
+        displayHighScorePosition("Nick", calculateHighScorePosition(500));
+
+        displayHighScorePosition("Rhiannon", calculateHighScorePosition(100));
+
+        displayHighScorePosition("Mary", calculateHighScorePosition(30));
+
     }
 
 
@@ -33,15 +41,28 @@ public class Methods {
         System.out.printf("%s managed to get into position %s on the high score table.%n", playerName, position);
     }
     public static int calculateHighScorePosition(int score) {
-        if (score > 100 && score < 500) {
-            return 3;
-        } else if (score > 500 && score < 1000) {
-            return 2;
-        } else if (score > 1000) {
-            return 1;
-        } else {
-            return 4;
+
+        // more readable solution
+        int position = 4; // assuming position 4 will be returned
+        if (score >= 1000) {
+            position = 1;
+        } else if (score >= 500) {
+            position = 2;
+        } else if (score >= 100) {
+            position = 3;
         }
+        return position;
+
+        // initial solution
+//        if (score >= 1000) {
+//            return 1;
+//        } else if (score >= 500) {
+//            return 2;
+//        } else if (score >= 100) {
+//            return 3;
+//        }
+//        return 4;
+
     }
 
 
