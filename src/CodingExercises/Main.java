@@ -7,6 +7,6 @@ public class Main {
         SpeedConverter.printConversion(-1);
         SpeedConverter.printConversion(10.5);
 
-
+        MegaBytesConverter.printMegaBytesAndKiloBytes(1048);
     }
 }
